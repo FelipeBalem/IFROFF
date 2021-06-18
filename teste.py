@@ -1,3 +1,4 @@
 """
 Testando
 """
+print("Testando")
