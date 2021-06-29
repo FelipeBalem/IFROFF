@@ -55,6 +55,7 @@ O Peso (P) é uma grandeza vetorial visto que apresenta intensidade,
 
     Dessa forma, diferentemente da massa, o peso é um valor variável.
 No Sistema Internacional (SI), a unidade padrão do Peso é representada em Newton (N)\n""")
+
 escolha = input('Qual valor quer descobrir: (p) Peso, (m) Massa, (g) Gravidade: ')
 
 escolha = escolha.lower() # Forçando o texto a ficar minúsculo.
