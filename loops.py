@@ -81,7 +81,7 @@ for numero in range(valor):
         print("Número ímpar")
     else:
         print('Número par')
-"""
+
 
 # Faça um algorimo que faça cadastro de pessoas com nome e idade e só pare quando for
 # digitado 'sair' no campo nome.
@@ -95,3 +95,91 @@ while nome != 'sair': # Enquanto condição for verdadeira, faça:
     print(f" seu nome é {nome} e tem {idade} anos. Seu ID é {rep}.")
     rep += 1
 print('sai do while')
+
+# Escreva um algoritmo em Python que imprima na tela a sequência de 1 até 100, 2 vezes.
+# Uma vez utilizando for e outra, while.
+
+# FOR
+for i in range(100):
+    print(i+1)
+
+# while
+i = 0
+while i <= 100:
+    print(i)
+    i += 1
+
+# Um algoritmo que recebe um número inteiro (n) e faz a soma de todos os números entre 0 e n
+
+n = int(input("Digite um número: ")) # 10
+soma = 0
+for numero in range(n):
+    print(f"{soma} + {numero}")  # Vendo o que está sendo somado
+    soma = soma + numero
+    print(f"Soma parcial: {soma}")
+print(f"A soma dos valores é: {soma}")
+
+# Um algoritmo que recebe um valor natural n e imprime todos os números naturais até n.
+
+n = int(input("Digite um número: "))
+for numero in range(n):
+    print(numero)
+
+# Um algoritmo que receba um quantidade de números naturais e informe qual deles é o maior,
+# o algoritmo só para de receber números quando o número 0 for digitado.
+
+# Um algoritmo que receba um quantidade de números naturais e informe qual deles é o maior,
+# o algoritmo só para de receber números quando o número 0 for digitado.
+
+maior = 1
+numero = 1
+
+while numero != 0:
+    numero = int(input("Digite um número: "))
+    if numero == 0:
+        break
+    elif numero > maior:
+        maior = numero
+
+print(f"O maior número digitado foi {maior}")
+
+
+# Extra - Maior e menor
+maior = 1
+numero = 1
+menor = 999
+while numero != 0:
+    numero = int(input("Digite um número: "))
+    if numero == 0:
+        break
+    if numero > maior:
+        maior = numero
+    if numero < menor:
+        menor = numero
+
+print(f"O maior número digitado foi {maior}")
+print(f"O menor número digitado foi {menor}")
+"""
+
+# Um programa que simule o lançamento de 2 dados, n vezes, e tem como saída o
+# número de cada dado e a relação ( >, <, == ) entre eles.
+
+# PS: Para esse algoritmo é utilizado uma função que ainda não aprendemos,
+# ignore ela por enquanto, foque apenas na função do loop e dos operadores relacionais
+
+from random import randint
+n = int(input("Digite quantos lançamentos serão feitos: "))
+for lancamento in range(n):
+    print(f"Lançamento: {lancamento}")
+    dado1 = randint(1, 6)
+    dado2 = randint(1, 6)
+    print(f"Dado 1 = {dado1}")
+    print(f"Dado 2 = {dado2}")
+    if dado1 > dado2:
+        print("Dado 1 > Dado 2")
+    elif dado2 > dado1:
+        print("Dado 2 > Dado 1")
+    else:
+        print("Os dois dados são iguais")
+
+
